@@ -1,0 +1,96 @@
+
+
+body {
+    background-color: #fcfcfc;
+
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title{
+    font-family: 'helvetica';
+    
+}
+canvas {
+    margin-bottom: 40px;
+}
+
+/*
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}*/
+#score{
+    top: 1%;
+    left: 89%;
+    position: absolute;
+    color: #F00A0A;
+    font-family: helvetica;
+}
+#scoretxt{
+    top: 1%;
+    left: 78%;
+    position: absolute;
+    color: black;
+    font-family: helvetica;
+}
+
+
+#snake{
+    border-radius: 5.5%;
+    position: fixed;
+    
+}
+.title{
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {color: #3FBDF4;}
+    10%  {color: #2c83b9;}
+    15%  {color: #e0c739;}
+    20%  {color: #e03232;}
+    100% {color: #5f0404;}
+}
+@keyframes colorchange {
+     0%  {color: #3FBDF4;}
+    10%  {color: #2c83b9;}
+    15%  {color: #e0c739;}
+    20%  {color: #e03232;}
+    80% {color: #5f0404;}
+}   
+#scoretxt{
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+    @-webkit-keyframes colorchange {
+        0%  {color: #3FBDF4;}
+       10%  {color: #2c83b9;}
+       15%  {color: #e0c739;}
+       20%  {color: #e03232;}
+       100% {color: #5f0404;}
+   }
+   @keyframes colorchange {
+        0%  {color: #3FBDF4;}
+       10%  {color: #2c83b9;}
+       15%  {color: #e0c739;}
+       20%  {color: #e03232;}
+       80% {color: #5f0404;}
+   }    
+}

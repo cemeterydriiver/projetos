@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="new.css">
+
+
+        <title>Snake Game</title>
+    </head>
+    <body>
+        <h1 class="title">Snake Game</h1>
+        <canvas id="snake" width="512" height="512" ;>
+        </canvas>
+<h1 class="over" style="opacity: 0">Você perdeu</h1>
+        <form id="dados">
+            <div class="form-group">
+               <label for="valor">Qual era a razão da P.A?</label>
+               <input type="number" class="form-control" name="valor" id="valor" ngModel/>
+            </div>
+            <div class="form-group">
+                <button onclick="sub()">Enviar</button>
+            </div>
+            </form>
+
+<script>
+function sub(){
+  var valor = document.getElementById('valor').value;
+
+if(valor == 1){
+document.getElementByClassName('over').style.opacity: 1;
+}
+
+else{
+    window.location.href = "https://www.youtube.com/missaoaprender";
+}
+}
+</script>
+    </body>
+</html>

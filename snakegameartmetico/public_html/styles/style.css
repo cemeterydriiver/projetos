@@ -1,0 +1,213 @@
+
+
+body {
+    background-color: #fcfcfc;
+
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#over{
+    opacity: 0;
+}
+#over h1{
+    font-family: helvetica;
+    position: relative;
+    left: 9%;
+    bottom: 30%;
+    color: #ff1313;
+}
+.title{
+    font-family: 'helvetica';
+    
+}
+canvas {
+    margin-bottom: 40px;
+}
+
+/*
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}*/
+#dados{
+    font-family: helvetica;
+}
+#input{
+    width:150px;
+    display: none;
+}
+.pa{
+    top: 3%;
+    left: 42%;
+    position: absolute;
+    color: #F00A0A;
+    font-family: helvetica;
+}
+.pa h1{
+    display: inline;
+}
+#scoretxt{
+    top: 1%;
+    left: 78%;
+    position: absolute;
+    color: black;
+    font-family: helvetica;
+}
+
+
+#snake{
+    border-radius: 5.5%;
+    position: absolute;
+    
+}
+.title{
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {color: #3FBDF4;}
+    10%  {color: #2c83b9;}
+    15%  {color: #e0c739;}
+    20%  {color: #e03232;}
+    100% {color: #5f0404;}
+}
+@keyframes colorchange {
+     0%  {color: #3FBDF4;}
+    10%  {color: #2c83b9;}
+    15%  {color: #e0c739;}
+    20%  {color: #e03232;}
+    80% {color: #5f0404;}
+}   
+#scoretxt{
+    left: 38%;
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+    @-webkit-keyframes colorchange {
+        0%  {color: #3FBDF4;}
+       10%  {color: #2c83b9;}
+       15%  {color: #e0c739;}
+       20%  {color: #e03232;}
+       100% {color: #5f0404;}
+   }
+   @keyframes colorchange {
+        0%  {color: #3FBDF4;}
+       10%  {color: #2c83b9;}
+       15%  {color: #e0c739;}
+       20%  {color: #e03232;}
+       80% {color: #5f0404;}
+   }    
+}
+button {
+    position: relative;
+    padding: 15px 22px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+   }
+   
+   button a {
+       text-decoration: none;
+    position: relative;
+    color: white;
+    font-family: helvetica;
+    letter-spacing: 5px;
+    z-index: 1;
+   }
+   
+   button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #DE1F1F;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+   }
+   
+   button .liquid::after,
+   button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #fff;
+   }
+   
+   button .liquid::before {
+    border-radius: 45%;
+    background: #F9E79F;
+    animation: animate 5s linear infinite;
+   }
+   
+   button .liquid::after {
+    border-radius: 40%;
+    background: #F4D03F;
+    animation: animate 10s linear infinite;
+   }
+   
+   button:hover .liquid {
+    top: -120px;
+   }
+   
+   @keyframes animate {
+    0% {
+     transform: translate(-50%, -75%) rotate(0deg);
+    }
+   
+    100% {
+     transform: translate(-50%, -75%) rotate(360deg);
+    }
+   }
+   .btn{
+       position: relative;
+       top: 100px;
+       bottom: 8%;
+       left: 10%;
+   }
+   .rep{
+       position: absolute;
+       top: 100%;
+   }
+   .snake{
+       color: white;
+       background-color: white;
+       position: absolute;
+       top: 15%;
+       left: 64%;
+       width: 25%;
+       height: 45%;
+   }
+#formcontainer{
+    position: absolute;
+    top: 90%;
+    left: 0%;
+}
+#container{
+    position: relative;
+    left: 500px;
+    bottom: 320px;
+}

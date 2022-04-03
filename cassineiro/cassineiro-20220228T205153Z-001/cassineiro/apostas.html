@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cassineiro</title>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+  <script type="text/javascript">
+        jQuery(document).ready(function($) { 
+        $(".scroll").click(function(event){        
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+       });
+    });
+    </script>
+</head>
+
+
+<body>
+
+<!--logo-->
+<div id="menu">
+    <font><a href="#home" id="ahome" class="scroll">Cassineiro!</a></font>
+    <font><a href="#graficosconse" id="agraficosconse" class="scroll">Gráficos de dívidas</a></font>
+    <font><a href="#consequencias" id="aconsequencias" class="scroll">Consequências</a></font>
+
+<h1 id="value2">0</h1>
+<h2 id="valortxt2">Valor a ser apostado: </h2>
+
+<h2 id="carteira"></h2>
+<a href="#" id="dividatxt">Dívida:</a>
+
+  <img src="logo.png" class="logoimg">
+</div>
+
+
+<div id="home">
+  <img id="backimg" src="roleta0.png" class="backimg">
+
+   <!--valores btn-->
+<form id="app-cover">
+  <div class="select-box">
+    <input type="checkbox" id="options-view-button">
+    <div id="select-button" class="brd">
+      <div id="selected-value">
+        <span>valores</span>
+      </div>
+      <div id="chevrons">
+        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+          <div class="option">
+        <input class="s-c top" type="radio" name="platform" value="valores">
+        <input class="s-c bottom" type="radio" name="platform" value="valores">
+        <i class="fab fa-10"></i>
+        <span class="label">valores</span>
+        <span class="opt-val">valroes</span>
+      </div>
+    <div id="options">
+      <div class="option" id="option5" onclick="option5()">
+        <input class="s-c top" type="radio" name="platform" value="5">
+        <input class="s-c bottom" type="radio" name="platform" value="5">
+        <i class="fab fa-5"></i>
+        <span class="label">5</span>
+        
+      </div>
+      <div class="option"id="option10" onclick="option10()">
+        <input class="s-c top" type="radio" name="platform" value="10">
+        <input class="s-c bottom" type="radio" name="platform" value="10">
+        <i class="fab fa-10"></i>
+        <span class="label">10</span>
+  
+      </div>
+      <div class="option"id="option30" onclick="option30()">
+        <input class="s-c top" type="radio" name="platform" value="30">
+        <input class="s-c bottom" type="radio" name="platform" value="30">
+        <i class="fab fa-30"></i>
+        <span class="label">30</span>
+        
+      </div>
+      <div class="option"id="option50" onclick="option50()">
+        <input class="s-c top" type="radio" name="platform" value="50">
+        <input class="s-c bottom" type="radio" name="platform" value="50">
+        <i class="fab fa-50"></i>
+        <span class="label">50</span>
+       
+      </div>
+      <div class="option"id="option100" onclick="option100()">
+        <input class="s-c top" type="radio" name="platform" value="100">
+        <input class="s-c bottom" type="radio" name="platform" value="100">
+        <i class="fab fa-100"></i>
+        <span class="label">100</span>
+        
+      </div>
+      <div id="option-bg"></div>
+    </div>
+  </div>
+</form>
+
+
+  <div class="aposta">
+    <h2 clas="escolhanumtxt"></h2>
+  <select id="select2" onChange="update()">
+    <option value="escolha um numero para apostar">Escolha um número</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <button onclick="roleta()" id="btnrodar">APOSTAR!</button>
+
+</div>
+</div>
+
+<div id="graficosconse">
+  <img id="graphics" src="0.png" class="graphics">
+</div>
+  </div>
+
+<div id="consequencias">
+  <a href="#" id="consequetxt">Consequências</a>
+  <h2 id="conseque1"></h2>
+  <h2 id="conseque2"></h2>
+  <h2 id="conseque3"></h2>
+  <h2 id="conseque4"></h2>
+  <h2 id="conseque5"></h2>
+  <h2 id="conseque6"></h2>
+  <h2 id="conseque7"></h2>
+  <h2 id="conseque8"></h2>
+  <h2 id="conseque9"></h2>
+</div>
+
+
+
+<script type="text/javascript">
+var option2 = 0;
+let carteira = 0;
+var conseque = 0;
+var alert1 = 0;
+
+function option5(){
+  option2 = 5;
+document.getElementById("graphics").src = "5.png";
+  document.getElementById('value2').innerHTML = option2;
+}
+function option10(){
+  option2 = 10;
+document.getElementById("graphics").src = "10.png";
+  document.getElementById('value2').innerHTML = option2;
+}
+function option30(){
+  option2 = 30;
+document.getElementById("graphics").src = "30.png";
+  document.getElementById('value2').innerHTML = option2;
+}
+function option50(){
+  option2 = 50;
+document.getElementById("graphics").src = "50.png";
+  document.getElementById('value2').innerHTML = option2;
+}
+function option100(){
+  option2 = 100;
+document.getElementById("graphics").src = "100.png";
+  document.getElementById('value2').innerHTML = option2;
+}
+
+function roleta(){
+ 
+  var select = document.getElementById('select2');
+  var option = select.options[select.selectedIndex];
+
+if(carteira >= 990){
+conseque = "Tá devendo 1000 pila pra agiota";
+if(alert1 == 0){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque1").innerHTML = conseque;
+}
+
+if(carteira >= 4990){
+conseque = "Você irá fazer uma corrida de anão";
+if(alert1 == 1){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque2").innerHTML = conseque;
+}
+
+if(carteira >= 9990){
+conseque = "será atropelado por um ônibus da Jotur";
+if(alert1 == 2){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque3").innerHTML = conseque;
+}
+
+if(carteira >= 14990){
+conseque = "Você vai comprar um Fiat Uno de escada em 48 vezes com juros de 1000% ao mês";
+if(alert1 == 3){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque4").innerHTML = conseque;
+}
+
+if(carteira >= 19990){
+conseque = "assistir My Little Pony - Equestria Girls 10 vezes";
+if(alert1 == 4){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque5").innerHTML = conseque;
+}
+
+if(carteira >= 24990){
+conseque = "vai virar amigo do outro Pedro";
+if(alert1 == 5){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque6").innerHTML = conseque;
+}
+
+if(carteira >= 29990){
+conseque = "terá o nome sujo no PROCOM";
+if(alert1 == 6){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque7").innerHTML = conseque;
+}
+
+if(carteira >= 34990){
+conseque = "Você vai virar NFT";
+if(alert1 == 7){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque8").innerHTML = conseque;
+}
+
+if(carteira >= 39990){
+conseque = "MLK TU QUER IR JOGAR NO VASCO?";
+if(alert1 == 8){
+  alert(conseque); 
+  alert1 ++;
+}
+document.getElementById("conseque9").innerHTML = conseque;
+}
+
+
+switch(option2){
+  case 5:
+    carteira += 5;
+  document.getElementById("carteira").innerHTML = "R$ " + carteira;
+  break;
+  case 10:
+    carteira += 10;
+  document.getElementById("carteira").innerHTML = "R$ " + carteira;
+  break;
+  case 30:
+    carteira += 30;
+  document.getElementById("carteira").innerHTML = "R$ " + carteira;
+  break;
+  case 50:
+    carteira += 50;
+  document.getElementById("carteira").innerHTML = "R$ " + carteira;
+  break;
+  case 100:
+    carteira += 100;
+  document.getElementById("carteira").innerHTML = "R$ " + carteira;
+  break;
+}
+
+if(option.value == 1){
+  var roleta2 = Math.floor(Math.random() * 5 + 1);
+  while(roleta2 == option.value){
+    var roleta2 = Math.floor(Math.random() * 5 + 1);
+}
+}
+
+if(option.value == 2){
+  var roleta2 = Math.floor(Math.random() * 5 + 1);
+  while(roleta2 == option.value){
+    var roleta2 = Math.floor(Math.random() * 5 + 1);
+}
+}
+
+if(option.value == 3){
+  var roleta2 = Math.floor(Math.random() * 5 + 1);
+  while(roleta2 == option.value){
+    var roleta2 = Math.floor(Math.random() * 5 + 1);
+}
+}
+
+if(option.value == 4){
+  var roleta2 = Math.floor(Math.random() * 5 + 1);
+  while(roleta2 == option.value){
+    var roleta2 = Math.floor(Math.random() * 5 + 1);
+}
+}
+
+if(option.value == 5){
+  var roleta2 = Math.floor(Math.random() * 5 + 1);
+  while(roleta2 == option.value){
+    var roleta2 = Math.floor(Math.random() * 5 + 1);
+}
+}
+switch(roleta2){
+  case 1:
+  document.getElementById("backimg").src = "roleta1.png";
+  break;
+  case 2:
+  document.getElementById("backimg").src = "roleta2.png";
+  break;
+  case 3:
+  document.getElementById("backimg").src = "roleta3.png";
+  break;
+  case 4:
+  document.getElementById("backimg").src = "roleta4.png";
+  break;
+  case 5:
+  document.getElementById("backimg").src = "roleta5.png";
+  break;
+}
+}
+</script>
+
+<!--bão dia, quem apaga tag é bem gey sabia? akasdkaskd bom code :33 <3-->
+<!--bão dia, então eu sou o gay que comeu tua tia :) <3 bom code !!-->
+  <!--bão dia, sou o gay q come sua irmã por mania :33 <33 bom codezin sz-- (25 ou 26/02?)>
+    <!--bom codezin <3<3 //27/02-->
+</nav>
+</select>
+</body>
+</html>
+</body>
+</html>
