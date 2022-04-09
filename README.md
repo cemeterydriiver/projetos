@@ -1,4 +1,5 @@
 
+
 # 🖥projetos
 ## **_⚙️ EM ANDAMENTO!! ⚙️_**
 > ### **Projetos autorais com fins estudantis**
@@ -38,4 +39,37 @@
 
 > - **Html e Css;**
 >- **JavaScript.**
+
+###  _👞Um Card da Nike, programado em:_
+
+> - **Html e Css;**
+
+###  _👩🏻‍💻Um Crud(Cadrastro de clientes), programado em:_
+
+> - **Html e Css;**
+> - **JavaScript.**
+
+###  _🖩Uma Calculadora de IMG, programada em:_
+
+> - **Html e Css;**
+> - **JavaScript.**
+
+###  _💡Uma Lâmpada, programada em:_
+
+> - **Html e Css;**
+> - **JavaScript.**
+
+###  _✨Menus animados, programados em:_
+
+> - **Html e Css;**
+> - **JavaScript.**
+###  _🚗Um Semaforo, programada em:_
+
+> - **Html e Css;**
+> - **JavaScript.**
+
+###  _📋Uma to-do, programada em:_
+
+> - **Html e Css;**
+> - **JavaScript.**
 
