@@ -1,0 +1,167 @@
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #876445;
+
+}
+    /**MENU**/
+#menucontainer{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background-color: #E0C097;
+    border-radius: 0px 0px 50px 50px;
+}
+#logo{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    right: 1100px;
+    top: -50px;
+}
+#home-nav{
+    text-decoration: none;
+    position: absolute;
+    left: 200px;
+    display: flex;
+    top: 40px;
+    font-family: helvetica;
+    color: #3a3636;
+    font-size: 25px;
+    
+}
+a:hover, .active {
+    color: #0e0504!important;
+}
+#coffee-nav{
+    text-decoration: none;
+    position: absolute;
+    left: 600px;
+    top: 40px;
+    font-family: helvetica;
+    color: #3a3636;
+    font-size: 25px;
+}
+#libry-nav{
+    position: absolute;
+    text-decoration: none;
+    left: 850px;
+    top: 40px;
+    font-family: helvetica;
+    color: #3a3636;
+    font-size: 25px;
+}
+#login-nav{
+    position: absolute;
+    text-decoration: none;
+    left: 1099px;
+    top: 40px;
+    font-family: helvetica;
+    color: #3a3636;
+    font-size: 25px;
+}
+@media (hover: hover) {
+    #creditcard {
+      /*  set start position */
+      transform: translateY(110px);
+      transition: transform 0.1s ease-in-out;
+      /*  set transition for mouse enter & exit */
+    }
+  
+    #money {
+      /*  set start position */
+      transform: translateY(180px);
+      transition: transform 0.1s ease-in-out;
+      /*  set transition for mouse enter & exit */
+    }
+  
+    button:hover #creditcard {
+      transform: translateY(0px);
+      transition: transform 0.2s ease-in-out;
+      /*  overide transition for mouse enter */
+    }
+  
+    button:hover #money {
+      transform: translateY(0px);
+      transition: transform 0.3s ease-in-out;
+      /*  overide transition for mouse enter */
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-0.25rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .button:hover .button__text span {
+    transform: translateY(-0.25rem);
+    transition: transform .2s ease-in-out;
+  }
+  
+  /* styling */
+  
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+      position: absolute;
+      top: 200px;
+      left: 500px;
+    border: none;
+    outline: none;
+    background-color: #8E3200;
+    padding: 1rem 90px 1rem 2rem;
+    position: relative;
+    border-radius: 8px;
+    letter-spacing: 0.7px;
+    background-color: #8E3200;
+    color: #fff;
+    font-size: 21px;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+  }
+  
+  .button__svg {
+    position: absolute;
+    overflow: visible;
+    bottom: 6px;
+    right: 0.2rem;
+    height: 140%;
+  }
+  a{
+    text-decoration: none;
+    color: wheat;
+  }
+  
+  @media screen and (min-width:
+1600px) {
+ #menucontainer { min-width: 100%; }
+}

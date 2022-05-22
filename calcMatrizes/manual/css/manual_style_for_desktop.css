@@ -1,0 +1,83 @@
+
+
+body{
+   font-family: helvetica;
+    background-color: black;
+}
+
+.container{
+    background-color: #212222;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%);
+}
+
+header{
+    height: 50px;
+    position: relative;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3,h4,h5{
+    font-size: 1.2rem;
+}
+
+#seta{
+    margin: 0;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    box-shadow: 1px 3px 5px rgb(0, 0, 0);
+}
+
+#seta:hover{
+   background-color: #212222;
+}
+
+.topics{
+    margin: 80px 5%;
+}
+
+p{
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+    
+ul,ol{
+    margin-bottom: 50px;
+}
+
+ul{
+    list-style-image: url('../../img/favicon.png');
+}
+
+a{
+    color: var(--second-blue);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

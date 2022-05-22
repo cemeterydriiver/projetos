@@ -1,0 +1,299 @@
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #876445;
+
+}
+    /**MENU**/
+#menucontainer{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background-color: #E0C097;
+    border-radius: 0px 0px 50px 50px;
+}
+#logo{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    right: 1100px;
+    top: -50px;
+}
+#home-nav{
+    text-decoration: none;
+    position: absolute;
+    left: 200px;
+    display: flex;
+    top: 40px;
+    font-family: helvetica;
+    color: #3a3636;
+    font-size: 25px;
+    
+}
+a:hover, .active {
+    color: #0e0504!important;
+}
+#coffee-nav{
+    text-decoration: none;
+    position: absolute;
+    left: 600px;
+    top: 40px;
+    font-family: helvetica;
+    color: #3a3636;
+    font-size: 25px;
+}
+#libry-nav{
+    position: absolute;
+    text-decoration: none;
+    left: 850px;
+    top: 40px;
+    font-family: helvetica;
+    color: #3a3636;
+    font-size: 25px;
+}
+#login-nav{
+    position: absolute;
+    text-decoration: none;
+    left: 1099px;
+    top: 40px;
+    font-family: helvetica;
+    color: #3a3636;
+    font-size: 25px;
+}
+#bookcontainer{
+    position: absolute;
+width: 405px;
+height: 460px;
+left: 71px;
+top: 150px;
+
+background: #C19A74;
+border-radius: 30px;
+}
+#bookstxt{
+    position: absolute;
+width: 263px;
+height: 36px;
+left: 77px;
+top: 0px;
+
+font-family: helvetica;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+
+color: #19180A;
+}
+#hp{
+    position: absolute;
+width: 272px;
+height: 75px;
+left: 70px;
+top: 110px;
+
+background: #FFFFFF;
+border-radius: 50px;
+}
+#hptxt{
+    position: absolute;
+width: 100px;
+height: 36px;
+left: 100px;
+top: -24px;
+font-family: helvetica;
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 36px;
+
+color: #000000;
+}
+
+#pc{
+    position: absolute;
+width: 272px;
+height: 75px;
+left: 70px;
+top: 220px;
+
+background: #FFFFFF;
+border-radius: 50px;
+}
+#pctxt{
+    position: absolute;
+width: 100px;
+height: 36px;
+left: 95px;
+top: -24px;
+font-family: helvetica;
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 36px;
+
+color: #000000;
+}
+
+#anne{
+    position: absolute;
+width: 272px;
+height: 75px;
+left: 70px;
+top: 320px;
+
+background: #FFFFFF;
+border-radius: 50px;
+}
+
+#annetxt{
+    position: absolute;
+width: 100px;
+height: 36px;
+left: 95px;
+top: -24px;
+font-family: helvetica;
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 36px;
+
+color: #000000;
+}
+#container{
+    position: absolute;
+width: 536px;
+height: 300px;
+left: 650px;
+top: 150px;
+
+background: #AD6D2F;
+border-radius: 30px;
+}
+#containertxt{
+    position: absolute;
+width: 472px;
+height: 72px;
+left: 20px;
+top: 2px;
+
+font-family: helvetica;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+
+color: #FFFFFF;
+}
+#txtbox{
+    border-radius: 30px;
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 20px;
+    top: 120px;
+}
+
+span{
+  position: relative;
+  top: 200px;
+  left: 150px;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "ENVIAR";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  background: #68533f;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: rgb(255, 255, 255);
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+.button-27 {
+    position: absolute;
+    top: 500px;
+    left: 710px;
+    appearance: none;
+    background-color: #b68c5d;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 10px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 30%;
+    will-change: transform;
+  }
+  
+  .button-27:disabled {
+    pointer-events: none;
+  }
+  
+  .button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  @media screen and (min-width:
+1600px) {
+ #menucontainer { min-width: 100%; }
+}
